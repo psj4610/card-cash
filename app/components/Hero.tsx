@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
+import { Smile } from 'lucide-react';
 import { responsive, microInteractions } from '@/app/config';
 
 export default function Hero() {
@@ -36,7 +37,7 @@ export default function Hero() {
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-20">
           <div className="w-32 h-32 bg-primary-yellow rounded-full flex items-center justify-center shadow-lg">
-            <span className="text-5xl">😊</span>
+            <Smile className="w-16 h-16 text-gray-800" strokeWidth={2} />
           </div>
           <div className="text-left space-y-4 max-w-2xl">
             <p className="text-xl md:text-2xl text-gray-700">
