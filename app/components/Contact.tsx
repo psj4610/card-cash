@@ -90,7 +90,7 @@ export default function Contact() {
               </div>
               <button
                 type="submit"
-                className="w-full bg-primary-red text-white py-4 rounded-lg font-semibold hover:bg-opacity-90 transition"
+                className="w-full bg-primary-yellow text-black py-4 rounded-lg font-semibold hover:bg-opacity-90 transition"
               >
                 상담 신청하기
               </button>

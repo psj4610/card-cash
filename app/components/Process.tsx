@@ -31,10 +31,10 @@ export default function Process() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((item, index) => (
             <div key={index} className="relative">
-              <div className="bg-gradient-to-br from-primary-blue to-primary-red text-white p-8 rounded-lg">
-                <div className="text-5xl font-bold opacity-30 mb-4">{item.step}</div>
+              <div className="bg-white border-4 border-primary-yellow text-gray-800 p-8 rounded-lg shadow-lg">
+                <div className="text-5xl font-bold text-primary-yellow opacity-30 mb-4">{item.step}</div>
                 <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
-                <p className="opacity-90">{item.description}</p>
+                <p className="text-gray-600">{item.description}</p>
               </div>
               {index < steps.length - 1 && (
                 <div className="hidden lg:block absolute top-1/2 -right-4 text-4xl text-primary-yellow">

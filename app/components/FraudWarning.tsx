@@ -5,12 +5,7 @@ export default function FraudWarning() {
         <div className="flex flex-col md:flex-row items-center justify-center gap-12">
           <div className="flex-1 max-w-2xl">
             <div className="relative">
-              <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
-                <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center animate-pulse">
-                  <div className="w-12 h-12 bg-red-600 rounded-full"></div>
-                </div>
-              </div>
-              <h2 className="text-4xl font-black text-red-500 mb-8 mt-8 text-center">사칭업체 주의하세요!</h2>
+              <h2 className="text-4xl font-black text-red-500 mb-8 text-center">사칭업체 주의하세요!</h2>
               <div className="bg-white rounded-3xl p-8 shadow-2xl">
                 <div className="bg-gray-50 rounded-2xl p-6 relative">
                   <div className="absolute top-4 right-4 text-red-500 text-6xl font-black transform rotate-12">✗</div>

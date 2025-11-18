@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-2xl font-bold mb-4 gradient-bg bg-clip-text text-transparent">
+            <h3 className="text-2xl font-bold mb-4">
               빠른현금화
             </h3>
             <p className="text-gray-400">
