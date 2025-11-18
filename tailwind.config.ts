@@ -13,6 +13,10 @@ const config: Config = {
           red: '#ed1c24',
           blue: '#0088cb',
           yellow: '#ffcb05',
+          beige: {
+            light: '#f5efe0',
+            DEFAULT: '#e8dcc8',
+          },
         },
         dark: '#242121',
       },

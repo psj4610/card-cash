@@ -2,24 +2,19 @@
 
 export default function Header() {
   return (
-    <header className="fixed top-0 w-full bg-white shadow-md z-50">
-      <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="text-2xl font-bold gradient-bg bg-clip-text text-transparent">
-          빠른현금화
+    <header className="bg-white shadow-sm sticky top-0 z-50">
+      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="flex items-center gap-2">
+          <div className="w-8 h-8 bg-primary-yellow rounded-full flex items-center justify-center">
+            <span className="text-xl">💳</span>
+          </div>
+          <span className="text-xl font-bold text-gray-800">비상금이 필요할땐 빠른현금화</span>
         </div>
-        <div className="hidden md:flex space-x-8">
-          <a href="#features" className="hover:text-primary-blue transition">서비스 소개</a>
-          <a href="#process" className="hover:text-primary-blue transition">이용방법</a>
-          <a href="#benefits" className="hover:text-primary-blue transition">특징</a>
-          <a href="#contact" className="hover:text-primary-blue transition">문의하기</a>
+        <div className="flex gap-6">
+          <a href="#top" className="text-gray-700 hover:text-gray-900 font-medium transition">메인</a>
+          <a href="#contact" className="text-blue-600 hover:text-blue-700 font-medium transition">문의하기</a>
         </div>
-        <a
-          href="#contact"
-          className="bg-primary-red text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition"
-        >
-          상담신청
-        </a>
-      </nav>
+      </div>
     </header>
   );
 }

@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className="antialiased">
+      <body className="antialiased bg-gradient-to-b from-primary-beige-light to-primary-beige">
         {children}
       </body>
     </html>
