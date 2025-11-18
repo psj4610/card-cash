@@ -20,6 +20,19 @@ const config: Config = {
         },
         dark: '#242121',
       },
+      keyframes: {
+        'gradient-shift': {
+          '0%, 100%': {
+            'background-position': '0% 50%',
+          },
+          '50%': {
+            'background-position': '100% 50%',
+          },
+        },
+      },
+      animation: {
+        'gradient-shift': 'gradient-shift 8s ease infinite',
+      },
     },
   },
   plugins: [],

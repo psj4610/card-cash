@@ -1,12 +1,38 @@
+'use client';
+import { motion } from 'framer-motion';
+import { responsive, microInteractions } from '@/app/config';
+
 export default function Hero() {
   return (
-    <section className="pt-32 pb-20 bg-yellow-50">
-      <div className="container mx-auto px-4 text-center">
-        <h1 className="text-5xl md:text-7xl font-black text-gray-800 mb-6">
+    <section className="pt-32 pb-20 bg-gradient-to-br from-yellow-50 via-primary-beige-light to-yellow-100 bg-[length:200%_200%] animate-gradient-shift">
+      <div className={`container mx-auto text-center ${responsive.mobile.padding} ${responsive.sm.padding} ${responsive.md.padding} ${responsive.lg.padding}`}>
+        <motion.h1
+          className={`font-black text-gray-800 mb-6 ${responsive.mobile.fontSize} ${responsive.sm.fontSize} ${responsive.md.fontSize} ${responsive.lg.fontSize}`}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-100px' }}
+          transition={{ duration: 0.6 }}
+        >
           신용카드 현금화 90%
-        </h1>
-        <p className="text-2xl md:text-3xl text-gray-600 mb-4">"고객만족도 최우선"</p>
-        <p className="text-xl md:text-2xl text-gray-500 mb-16">더 이상 고민하지 마세요 :)</p>
+        </motion.h1>
+        <motion.p
+          className="text-2xl md:text-3xl text-gray-600 mb-4"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-100px' }}
+          transition={{ delay: 0.1, duration: 0.6 }}
+        >
+          "고객만족도 최우선"
+        </motion.p>
+        <motion.p
+          className="text-xl md:text-2xl text-gray-500 mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-100px' }}
+          transition={{ delay: 0.2, duration: 0.6 }}
+        >
+          더 이상 고민하지 마세요 :)
+        </motion.p>
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-20">
           <div className="w-32 h-32 bg-primary-yellow rounded-full flex items-center justify-center shadow-lg">
@@ -25,10 +51,16 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-12">
+        <motion.div
+          className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-100px' }}
+          transition={{ delay: 0.4, duration: 0.6 }}
+        >
           <a
             href="tel:1588-0000"
-            className="bg-black rounded-2xl p-6 shadow-xl hover:shadow-2xl transition text-white w-64"
+            className={`bg-black rounded-2xl p-6 shadow-xl text-white w-64 ${microInteractions.button.transition} hover:${microInteractions.button.hover} active:${microInteractions.button.active}`}
           >
             <p className="text-sm mb-2">365일 24시</p>
             <div className="flex items-center justify-center gap-2 mb-2">
@@ -39,7 +71,7 @@ export default function Hero() {
 
           <a
             href="#contact"
-            className="bg-primary-yellow rounded-2xl p-6 shadow-xl hover:shadow-2xl transition text-black w-64 font-bold"
+            className={`bg-primary-yellow rounded-2xl p-6 shadow-xl text-black w-64 font-bold ${microInteractions.button.transition} hover:${microInteractions.button.hover} active:${microInteractions.button.active}`}
           >
             <p className="text-sm mb-2">365일 24시</p>
             <div className="flex items-center justify-center gap-2 mb-2">
@@ -47,7 +79,7 @@ export default function Hero() {
               <p className="text-3xl font-bold">1:1 카톡상담</p>
             </div>
           </a>
-        </div>
+        </motion.div>
 
         <div className="flex flex-wrap justify-center gap-6 text-lg font-bold text-gray-700">
           <span className="bg-primary-yellow px-4 py-2 rounded-full">상품권현금화</span>
