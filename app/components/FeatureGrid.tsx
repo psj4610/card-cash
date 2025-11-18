@@ -17,7 +17,7 @@ export default function FeatureGrid() {
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-gray-700 to-gray-900 text-white p-8 md:p-12 flex flex-col items-center justify-center min-h-[400px]">
+          <div className="bg-gray-800 text-white p-8 md:p-12 flex flex-col items-center justify-center min-h-[400px]">
             <div className="text-5xl mb-6">📢</div>
             <h3 className="text-2xl font-bold mb-6 text-center">무이자 할부<br/>부분무이자 OK</h3>
             <p className="text-sm leading-relaxed text-center text-gray-300">
@@ -27,8 +27,7 @@ export default function FeatureGrid() {
               할부 정책 프로모션으로<br/>
               카드사 정책에 따라<br/>
               할부 개월 수가 변동될 수 있습니다.<br/><br/>
-              <span className="font-bold text-white">경제적 부담을 최소화</span>하는<br/>
-              합리적인 할부 서비스를 제공합니다.
+              <span className="font-bold bg-primary-yellow text-black px-2 py-1 rounded">경제적 부담을 최소화</span><span className="inline-block mt-1">하는<br/>합리적인 할부 서비스를 제공합니다.</span>
             </p>
           </div>
 
@@ -43,7 +42,7 @@ export default function FeatureGrid() {
                 <p>✓ 일시불 상환</p>
               </div>
               <div className="border-t-2 border-gray-400 pt-4">
-                <p className="font-bold mb-2 text-primary-blue">신용카드 현금화:</p>
+                <p className="font-bold mb-2 bg-primary-yellow px-2 py-1 rounded inline-block">신용카드 현금화:</p>
                 <p className="text-green-600">✗ 신용조회 기록 없음</p>
                 <p className="text-green-600">✗ 신용점수 하락 없음</p>
                 <p className="font-bold">✓ 12개월 할부 OK</p>
@@ -52,14 +51,14 @@ export default function FeatureGrid() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-green-400 to-green-600 text-white p-8 md:p-12 flex flex-col items-center justify-center min-h-[400px]">
+          <div className="bg-primary-yellow text-black p-8 md:p-12 flex flex-col items-center justify-center min-h-[400px]">
             <div className="text-5xl mb-6">💬</div>
             <h3 className="text-2xl font-bold mb-6 text-center">신용카드 현금화<br/>안전 업체</h3>
-            <p className="text-sm leading-relaxed text-center">
+            <p className="text-sm leading-relaxed text-center font-medium">
               안전 등록업체 빠른현금화는<br/>
               불법적인 카드깡 서비스는<br/>
               절대 제공하지 않습니다.<br/><br/>
-              <span className="font-bold">현금성이 높은 상품으로<br/>현금화 서비스를<br/>지원해 드리고 있습니다.</span><br/><br/>
+              <span className="font-bold bg-black text-white px-2 py-1 rounded">현금성이 높은 상품으로<br/>현금화 서비스를<br/>지원해 드리고 있습니다.</span><br/><br/>
               빠르고 간편하게<br/>
               신용카드현금화를 해주는 곳을<br/>
               찾고 계신다면,<br/><br/>

@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="pt-32 pb-20 bg-gradient-to-b from-primary-beige-light to-primary-beige">
+    <section className="pt-32 pb-20 bg-yellow-50">
       <div className="container mx-auto px-4 text-center">
         <h1 className="text-5xl md:text-7xl font-black text-gray-800 mb-6">
           신용카드 현금화 90%
@@ -14,13 +14,13 @@ export default function Hero() {
           </div>
           <div className="text-left space-y-4 max-w-2xl">
             <p className="text-xl md:text-2xl text-gray-700">
-              최저수수료는 기본, <span className="font-bold">12개월 부분무이자 할부도 OK</span>
+              최저수수료는 기본, <span className="font-bold bg-primary-yellow px-2 py-1 rounded">12개월 부분무이자 할부도 OK</span>
             </p>
             <p className="text-xl md:text-2xl text-gray-700">
-              모든 신용카드 <span className="font-bold text-primary-yellow">무이자 할부로 부담없이 OK</span>
+              모든 신용카드 <span className="font-bold bg-primary-yellow px-2 py-1 rounded">무이자 할부로 부담없이 OK</span>
             </p>
             <p className="text-xl md:text-2xl text-gray-700">
-              안전한 신용카드 결제 현금화 <span className="font-bold text-primary-yellow">한도 제한없이 OK</span>
+              안전한 신용카드 결제 현금화 <span className="font-bold bg-primary-yellow px-2 py-1 rounded">한도 제한없이 OK</span>
             </p>
           </div>
         </div>
@@ -28,7 +28,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-12">
           <a
             href="tel:1588-0000"
-            className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-6 shadow-2xl transform hover:scale-105 transition-transform text-white w-64"
+            className="bg-black rounded-2xl p-6 shadow-xl hover:shadow-2xl transition text-white w-64"
           >
             <p className="text-sm mb-2">365일 24시</p>
             <div className="flex items-center justify-center gap-2 mb-2">
@@ -39,7 +39,7 @@ export default function Hero() {
 
           <a
             href="#contact"
-            className="bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-2xl p-6 shadow-2xl transform hover:scale-105 transition-transform text-white w-64"
+            className="bg-primary-yellow rounded-2xl p-6 shadow-xl hover:shadow-2xl transition text-black w-64 font-bold"
           >
             <p className="text-sm mb-2">365일 24시</p>
             <div className="flex items-center justify-center gap-2 mb-2">
@@ -49,10 +49,10 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-6 text-lg font-bold text-blue-600">
-          <span>상품권현금화</span>
-          <span>신용카드현금화</span>
-          <span>소액결제현금화</span>
+        <div className="flex flex-wrap justify-center gap-6 text-lg font-bold text-gray-700">
+          <span className="bg-primary-yellow px-4 py-2 rounded-full">상품권현금화</span>
+          <span className="bg-primary-yellow px-4 py-2 rounded-full">신용카드현금화</span>
+          <span className="bg-primary-yellow px-4 py-2 rounded-full">소액결제현금화</span>
         </div>
       </div>
     </section>

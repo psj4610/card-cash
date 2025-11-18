@@ -26,12 +26,12 @@ export default function Benefits() {
           ))}
         </div>
 
-        <div className="mt-16 bg-gradient-to-r from-primary-blue to-primary-red text-white p-10 rounded-2xl text-center">
+        <div className="mt-16 bg-primary-yellow text-black p-10 rounded-2xl text-center shadow-xl">
           <h3 className="text-3xl font-bold mb-4">지금 바로 시작하세요!</h3>
           <p className="text-xl mb-6">빠르고 안전한 카드현금화 서비스</p>
           <a
             href="#contact"
-            className="inline-block bg-white text-primary-blue px-8 py-4 rounded-full text-lg font-semibold hover:bg-opacity-90 transition"
+            className="inline-block bg-black text-white px-8 py-4 rounded-full text-lg font-semibold hover:opacity-90 transition"
           >
             무료 상담 신청하기
           </a>
